@@ -1,6 +1,7 @@
  const express = require("express");
+ require('dotenv').config();
  const app = express();
-
+ const PORT = 3000;
  const path = require("path");
  const http = require('http');
 
@@ -24,7 +25,7 @@
      resp.render('index');
  });
 
-server.listen(3000);
+server.listen(process.env.PORT);
 // const express = require('express');
 // const { createServer } = require('node:http');
 // const { join } = require('node:path');
