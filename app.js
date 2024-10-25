@@ -1,7 +1,7 @@
  const express = require("express");
  require('dotenv').config();
  const app = express();
- const PORT = 3000;
+ const PORT = 7000;
  const path = require("path");
  const http = require('http');
 
@@ -9,8 +9,8 @@
 
  const server = http.createServer(app);
  const io = socketio(server);
- app.set('view engine', 'ejs');
- app.use(express.static(path.join(__dirname, "public")));
+ //app.set('view engine', 'ejs');
+ app.use(express.static(path.join(__dirname, "views")));
 
  io.on("connection", function(socket){
     socket.on("send-location", function(data){
@@ -22,7 +22,7 @@
    // console.log("connected");
  })
  app.get('/', function(req, resp){
-     resp.render('index');
+     resp.render('index.html');
  });
 
 server.listen(process.env.PORT);
