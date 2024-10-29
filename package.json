@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
-        "dev": "vercel dev",
-    "start": "vercel dev"
-=======
+    
     "start": "node app.js",
     "build": "npm run build"
->>>>>>> 657a85b81a91a289f85ac71e9ceaec43479beb74
+
   },
   "keywords": [],
   "author": "",
