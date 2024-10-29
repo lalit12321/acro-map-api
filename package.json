@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    
     "start": "node app.js",
-    "build": "npm run build"
-
+    "dev": "nodemon app.js",  // Added for development with nodemon
+    "build": "npm run build"   // This line seems unnecessary unless you have a build step
   },
   "keywords": [],
   "author": "",
@@ -16,9 +15,10 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
-    "nodemon": "^3.1.7",
-    "pug": "^3.0.3",
     "socket.io": "^4.8.0",
     "socket.io-client": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"  // Move nodemon to devDependencies
   }
 }
