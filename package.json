@@ -1,11 +1,11 @@
 {
-  "name": "map-api",
-  "version": "1.0.0",
+  "name": "",
+  "version": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",  // Added for development with nodemon
-    "build": "npm run build"   // This line seems unnecessary unless you have a build step
+    "dev": "nodemon app.js",  
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
